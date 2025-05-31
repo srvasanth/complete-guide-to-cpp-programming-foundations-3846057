@@ -3,10 +3,16 @@
 // Terminal Interaction, by Eduardo Corpeño 
 
 #include <iostream>
+#include <string>
 
-int main(){
-    std::cout << "Hi There!" << std::endl;
+int main()
+{
+    std::string name1;
+    
+    std::cout << "Whats your Name: " << std::flush;
+    std::cin >> name1;
 
-    std::cout << std::endl << std::endl;
+    std::cout << "Welcome " << name1 << "!" << std::endl;
+
     return 0;
 }
